@@ -1,6 +1,7 @@
 body {
     margin: 0 auto;
     font-family: 'Exo', sans-serif;
+    display: flex;
 }
 
 h1 {
