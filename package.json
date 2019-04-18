@@ -11,9 +11,8 @@
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "build": "npm run build:sass && npm run build:autoprefixer && npm run test",
-	  "build:sass": "node-sass --output-style compact -o css sass",
-	  "build:autoprefixer": "autoprefixer-cli css/style.css",
-
+    "build:sass": "node-sass --output-style compact -o css sass",
+    "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass"
   },
   "repository": {
@@ -32,6 +31,7 @@
     "browser-sync": "^2.26.3",
     "globstar": "^1.0.0",
     "node-sass": "^4.11.0",
-    "nu-html-checker": "^0.1.0"
+    "nu-html-checker": "^0.1.0",
+    "onchange": "^5.2.0"
   }
 }
